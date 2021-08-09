@@ -37,7 +37,9 @@ Components used in the project listed:
 - Wires x14
 
 Components connected to the Arduino as follows:
+
 **LCD Display:**
+
 - Pin 1 (GND) on the LCD to ground on the Arduino.
 - Pin 2 (VCC) on the LCD to 5V on the Arduino.
 - Pin 3 (V0) on the LCD to middle pin (wiper) of the Potentiometer.
@@ -49,8 +51,11 @@ Components connected to the Arduino as follows:
 - Pin 16 (LED) on the LCD to ground on the Arduino through the 200-ohm resistor.
 
 **Temperature Sensor:** Vout of the temperature sensor to analog pin A0 on the Arduino.
+
 **PiezoBuzzer:** Positive pin of the piezo buzzer to digital pin 2 on the Arduino.
+
 **Pushbuttons:**
+
 - Button 1 to digital pin 10 on the Arduino through a 10K-ohm resistor.
 - Button 2 to digital pin 9 on the Arduino through a 10K-ohm resistor.
 - Button 3 to digital pin 8 on the Arduino through a 10K-ohm resistor.
