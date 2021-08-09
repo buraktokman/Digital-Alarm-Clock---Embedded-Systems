@@ -63,15 +63,19 @@ First and foremost, LiquidCrystal.h library included, digital and analog pins th
 initiated.
 
 **Setup*
+
 In the setup( ) function, pin modes defined, LCD and serial connection begin. All interrupts disabled before the timer configuration and enabled after the configuration.
 
 **Timer**
+
 In this project Timer1 with prescaler 256 used for the timing and compare match interrupt enabled. Compare match register (OCR1A) top value set to 62,500.
 Timer1 reaches from 0 to value 62,500 in a second (1,000ms) and triggers the interrupt. In the ISR (Interrupt Service Routine), timer value TCNT1 reset to 0 then the updateClock( ) function executed which adds +1 second to the clock.
 
-Loop( )** function checks the screenMode variable and shows the active screen. The default mode is 0 which executes the clock( ) function to show the live clock, temperature, and alarm status. Then checks if it’s time to alert if the clock equals to the alarm clock.
+**Loop( )** function checks the screenMode variable and shows the active screen. The default mode is 0 which executes the clock( ) function to show the live clock, temperature, and alarm status. Then checks if it’s time to alert if the clock equals to the alarm clock.
 At the end checkButton( ) function called in order to check if a button pressed or not.
+
 **Change Hour Mode:** Press B4 to switch between 12-hour AM/PM) and 24-hour modes.
+
 **Change Temperature Mode:** Press B3 to switch between 12-hour AM/PM) and 24-hour modes.
 
 **Set Time:**
