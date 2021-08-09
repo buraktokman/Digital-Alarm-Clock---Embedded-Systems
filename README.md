@@ -62,7 +62,7 @@ Components connected to the Arduino as follows:
 First and foremost, LiquidCrystal.h library included, digital and analog pins that are used in the circuit assigned to variables accordingly. Before the setup function, the global variables
 initiated.
 
-**Setup*
+**Setup**
 
 In the setup( ) function, pin modes defined, LCD and serial connection begin. All interrupts disabled before the timer configuration and enabled after the configuration.
 
